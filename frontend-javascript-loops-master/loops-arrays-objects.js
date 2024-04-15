@@ -16,7 +16,12 @@ const scores = [
 // 66
 // ==========================================
 
+console.log(scores);
 
+
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i].score);
+}
 
 
 
@@ -33,6 +38,28 @@ const scores = [
 // ==========================================
 
 
+for (let i = 0; i < scores.length; i++) {
+    const score = scores[i].score;
+    let grade;
+    switch (true) {
+        case score < 60:
+            grade = 'F';
+            break;
+        case score < 70:
+            grade = 'D';
+            break;
+        case score < 80:
+            grade = 'C';
+            break;
+        case score < 90:
+            grade = 'B';
+            break;
+        default:
+            grade = 'A';
+    }
+    scores[i].grade = grade;
+    console.log(grade);
+}
 
 
 
@@ -49,6 +76,32 @@ const scores = [
 //  ];
 // ==========================================
 
+
+
+for (let i = 0; i < scores.length; i++) {
+    const score = scores[i].score;
+    let grade;
+    switch (true) {
+        case score < 60:
+            grade = 'F';
+            break;
+        case score < 70:
+            grade = 'D';
+            break;
+        case score < 80:
+            grade = 'C';
+            break;
+        case score < 90:
+            grade = 'B';
+            break;
+        default:
+            grade = 'A';
+    }
+    scores[i].grade = grade;
+}
+
+
+console.log(scores);
 
 
 
@@ -75,8 +128,17 @@ const NOVIEmployees = [
 //  ];
 // ==========================================
 
+console.log(NOVIEmployees);
 
 
+for (let i = 0; i < NOVIEmployees.length; i++) {
+    const firstName = NOVIEmployees[i].firstName;
+    const lastName = NOVIEmployees[i].lastName;
+    const email = `${firstName}.${lastName}@novi.nl`;
+    NOVIEmployees[i].email = email;
+}
+
+console.log(NOVIEmployees);
 
 
 
